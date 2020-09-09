@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="script.js"></script>
+    <style>
+    button{
+        height: 30px;
+        width: 30px;
+    }
+    h1{
+        font-weight: bold;
+        background-color: plum;
+        font-family: sans-serif;
+        width: 50%;
+        border: seagreen 3px solid;
+        font-size: 60px;
+    }
+    body{
+        background-image: url(mathmmmm.jpg);
+        background-repeat:no-repeat ;
+        background-size: cover;
+        background-position: center;
+        height: 650px;
+        overflow: hidden;
+
+    }
+    #result{
+        font-weight: bold;
+        background-color: plum;
+        font-family: sans-serif;
+        width: 25%;
+        border: seagreen 3px solid;
+        font-size: 40px; 
+        display: none; 
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Fast Maths</h1>
+   <br> 
+    <input placeholder="enter your first number" style="background-color: rgb(0, 255, 0);" type="text" id="first">
+    <br>
+    <input placeholder="enter your second number" style="background-color: rgb(108, 255, 108);" type="text" id="second">
+    <br>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <button style="background-color: cyan;" onclick="addition(document.getElementById('first').value,document.getElementById('second').value)">+</button> 
+            <button style="background-color: cornflowerblue;" onclick="substract(document.getElementById('first').value,document.getElementById('second').value)">-</button>  
+            <br> 
+        </tr>
+        <tr>
+            <button style="background-color: cadetblue;" onclick="divide(document.getElementById('first').value,document.getElementById('second').value)">%</button> 
+            <button style="background-color: blue;" onclick="multiply(document.getElementById('first').value,document.getElementById('second').value)">X</button> 
+        </tr>
+    </table>
+   
+    
+    <h1 id="result"></h1>
+    <button style="width: 60px;" onclick="clear()">clear</button>
+</center>
+</body>
+</html>
